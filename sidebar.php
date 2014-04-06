@@ -3,7 +3,7 @@
 	<img class="line" src="<?php echo bloginfo('template_url'); ?>/images/footer-line.png" />
 
     <aside class="about palatino">
-        Pam Parker is an award-winning fiction author with a novel-in-progress. <a href="http://www.pamwrites.net/about">Read&nbsp;more&nbsp;&raquo;</a>
+        Pam Parker is an author with published fiction, non-fiction and poetry.<br><a href="<?= home_url(); ?>/about">Read more about her awards and publications&nbsp;here&nbsp;&raquo;</a>
     </aside>
                 
     <?php get_search_form(); ?>
