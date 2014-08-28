@@ -113,13 +113,6 @@ function register_custom_menu_pages() {
 add_action('admin_menu', 'register_custom_menu_pages');
 
 
-// Remove a few admin pages
-function remove_admin() {
-	remove_menu_page('upload.php');
-	remove_menu_page('tools.php');
-}
-add_action('admin_menu', 'remove_admin');
-
 // Add admin javascript and CSS
 function pw_admin_stuff() {
 	$template_url = get_bloginfo('template_url');
