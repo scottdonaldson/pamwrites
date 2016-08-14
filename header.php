@@ -1,14 +1,5 @@
 <!DOCTYPE html>
-<!--
-
-    Site by Parsley & Sprouts
-    http://www.parsleyandsprouts.com
-
--->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
      <title><?php wp_title(''); ?></title> 
  
@@ -27,16 +18,16 @@
 </head>
 
 <body <?php body_class('clearfix'); ?>>
+
+<!--[if lt IE 10]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
     
 <header>
-	
-    <div id="paint">
-    	<img src="<?php echo bloginfo('template_url'); ?>/images/b-<?php $num = rand(1,5); echo $num; ?>.png" />
-    </div>
-    
-    <a href="<?php echo site_url(); ?>" rel="home" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
-    	<img id="logo" src="<?php echo bloginfo('template_url'); ?>/images/pam.png" />
-    </a>   
+
+    <div id="header"></div>
+
+    <h1 style="margin: 0;"><a id="site-title" href="<?php echo home_url(); ?>"><?php echo bloginfo('site_title'); ?></a></h1>
             
 	<nav class="palatino"><?php wp_nav_menu(); ?></nav>
  
